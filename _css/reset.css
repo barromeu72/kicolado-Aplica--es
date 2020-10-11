@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'font-menu';
+    src: url(../_fonts/Super-Cau.ttf);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Verdana', 'Montserrat', 'Geneva', 'Tahoma','nomada' sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.font-zero {
+    font-size: 0%;
+}
+.section-title {
+	font-size: 1.4rem; 
+	font-weight: 300;
+	color: #050505;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+.section-title span {
+	color: #cc0033;
+}
+
+/*btn*/
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	color: #050505;
+	background-color: transparent;
+	border: 2px solid #cc0033;
+	font-size: 2rem; 
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+	border-radius: 8px;
+}
+.btn:hover {
+	color: #f5f5f5;
+	background-color: #cc0033;
+}
+/* Marca */
+.marca h1 {
+	font-size: 3rem; 
+	text-transform: uppercase;
+	color: #f5f5f5;
+}
+.marca h1 span {
+	color: #cc0033;
+}
+/* imagens */
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+/* Parágrafo */
+p {
+	color: #050505;
+	font-size: 1.5rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
+}

@@ -1,0 +1,122 @@
+@charset "utf-8";
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "section section section"
+                         "footer footer footer";
+}
+
+.galeria {
+    grid-area: main;
+    max-width: 1200px;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-img {
+    width: 200px;
+    height: 240px;
+    overflow: hidden;
+    margin: 10px;
+}
+.small-img {
+    height: 100%;
+    cursor: pointer;
+}
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, .7);
+    visibility: hidden;
+}
+#modal-img {
+    width: 65vw;
+    margin-top: 70px;
+}
+#btn-close {
+    position: absolute;
+    right: 280px;
+    top: 90px;
+    padding: 5px 10px;
+    font-size: 4.5rem;
+    color: #f1f1f1; 
+    background-color: #1c1c1c;
+    border: solid 2px #f1f1f1;
+    border-radius: 100%;
+}
+.modal-active {
+   visibility: visible; 
+}
+.container-f {
+    grid-area: section;
+    position: relative;
+    width: 1200px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-f .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 300px;
+    height: 420px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    background-color: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+.container-f .card:hover {
+    height: 420px;
+
+}
+.container-f .card .img-box {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -20px;
+    left: 20px;
+    /*z-index: 1;*/
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container-f .card .img-box img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.container-f .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #0101;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3S ease-in-out;
+    -WEBKIT-transition: 0.3S ease-in-out;
+}
+.container-f .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+
+}
+.footer {
+    grid-area: footer;
+}
